@@ -1,0 +1,36 @@
+.seccionSobreMiContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    .titleSobreMi{
+        margin: 25px;
+        color: white;
+        font-size: 3rem;
+        font-family: $fuenteOrbitron;
+        font-weight: 400;
+        text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
+        margin: 25px;
+    }
+
+    .infoAboutMe{
+        max-width: 70%;
+        text-align: left;
+        margin: 25px;
+        
+        .infoPresentacion{
+            font-size: 1.3rem;
+            font-family: $fuentePoppins;
+            font-weight: 100;
+            color: white;
+
+            .color{
+                color: #e33;
+                font-weight: 500;
+            }
+
+        }
+    }
+}
