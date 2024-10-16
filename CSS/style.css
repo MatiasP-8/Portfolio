@@ -230,4 +230,85 @@ header nav .nav-link:hover {
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
 }
 
+.proyectos-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.proyectos-container h2 {
+  margin: 25px;
+  color: white;
+  font-size: 3rem;
+  font-family: "orbitron";
+  font-weight: 400;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
+}
+.proyectos-container .proyectos-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+.proyectos-container .proyectos-cards-container .card {
+  display: flex;
+  justify-content: start;
+  margin: 35px 0 70px 0;
+  width: 380px;
+  height: 430px;
+  background-color: transparent;
+  border: 1px dotted rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+.proyectos-container .proyectos-cards-container .card .img-card-container img {
+  padding: 3px 2px;
+  width: 380px;
+  height: 330px;
+  border-radius: 5px;
+  filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+}
+.proyectos-container .proyectos-cards-container .card .lenguajes-proyectos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+.proyectos-container .proyectos-cards-container .card .lenguajes-proyectos .html {
+  width: 100px;
+  margin: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #E5532D;
+  font-weight: 600;
+  font-family: "orbitron";
+}
+.proyectos-container .proyectos-cards-container .card .lenguajes-proyectos .sass {
+  width: 100px;
+  margin: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #C76897;
+  font-weight: 600;
+  font-family: "orbitron";
+}
+.proyectos-container .proyectos-cards-container .card .lenguajes-proyectos .js {
+  width: 120px;
+  margin: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #EFD81D;
+  font-weight: 600;
+  font-family: "orbitron";
+}
+.proyectos-container .proyectos-cards-container .card .info-card-container {
+  margin: 5px 0;
+  text-align: left;
+}
+.proyectos-container .proyectos-cards-container .card .info-card-container .title-card {
+  margin: 0 10px;
+  color: white;
+  font-size: 1.1rem;
+  font-family: "orbitron";
+  font-weight: 400;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
+}
+
 /*# sourceMappingURL=style.css.map */
