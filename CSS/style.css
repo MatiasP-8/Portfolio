@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #191f36; /*Azul oscuro con transparencia*/
+  background-color: #151B23; /*Azul oscuro con transparencia*/
   scroll-behavior: smooth;
 }
 
@@ -53,13 +53,13 @@ header nav .nav-link:hover {
   align-items: center;
 }
 .seccionInfo .containerSeccionInfo {
-  background-color: #191f36;
+  background-color: #151B23;
   width: 80%;
   height: 85vh;
   display: flex;
   justify-content: center;
   text-align: center;
-  box-shadow: 0 0 16px #191f36;
+  box-shadow: 0 0 16px #151B23;
   /* box-shadow: 0 0 10px black; */
   border-radius: 5px;
 }
@@ -114,7 +114,7 @@ header nav .nav-link:hover {
   padding: 0 180px;
 }
 .seccionInfo .containerSeccionInfo .infoContainer .downloadButton .download {
-  background-color: #59b2f4;
+  background-color: #227B78;
   width: 270px;
   height: 60px;
   border-radius: 25px;
@@ -127,7 +127,7 @@ header nav .nav-link:hover {
 }
 .seccionInfo .containerSeccionInfo .infoContainer .downloadButton .download:hover {
   text-shadow: 0 0 16px white;
-  box-shadow: 0 0 16px #59b2f4;
+  box-shadow: 0 0 16px #227B78;
   cursor: pointer;
 }
 .seccionInfo .containerSeccionInfo .infoContainer .downloadButton .download a {
@@ -263,7 +263,7 @@ header nav .nav-link:hover {
 .proyectos-container .proyectos-cards-container .card .img-card-container img {
   padding: 3px 2px;
   width: 380px;
-  height: 330px;
+  height: 300px;
   border-radius: 5px;
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
 }
