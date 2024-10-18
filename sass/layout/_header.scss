@@ -5,7 +5,7 @@ header{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
     
     nav{
         display: flex;
@@ -13,84 +13,20 @@ header{
             color: white;
             font-size: 25px;
             font-weight: 500;
-            font-family: $fuenteOrbitron;
-
-            &:hover{
-                color: #00FF99;
-                scale: 1.1;
-            }
+            font-family: $fuenteOnest;
         }
 
         .nav-link{
             text-decoration: none;
-            margin: 0 10px;
-            padding: 10px;
+            font-weight: 500;
+            margin: 0 3px;
             color: white;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-style: normal;
-            font-size: 18px; 
-            transition: .5s;
-
+            font-family: $fuenteOnest;
+            font-size: 18px;
             &:hover{
-                color: black;
-                font-weight: 500;
-                background-color: #09FB9D;
-                border-radius: 50px;
+              color: #273F78;  
             }
         }
     }
 }
     
-
-//     .navBar{
-//         /* background-color: rgba(200, 200, 200, 0.1); */
-//         background-color: rgba(255, 255, 255, 0.030);
-//         width: 100%;
-//         height: 100%;
-//         border-radius: 5px;
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         position: relative;
-//         top: 10px;
-//         border-radius: 300px;
-
-//         .logoContainer {
-//         .logo{
-//             color: white;
-//             font-family: 'arial';
-//             font-size: 20px;
-//             font-weight: bold;
-//         }
-//     }
-
-//         ul{
-//             max-width: 90%;
-//             list-style: none;
-//             display: flex;
-
-//             li{
-//                 transition: 1s scale;
-
-//                 &:hover{
-//                     scale: 1.1;
-//                     cursor: pointer;
-//                     background-color: #e33;
-//                     border-radius: 25px;
-//                     box-shadow: 0 0 10px #e33;
-//                  }
-
-//                 a{
-//                     text-decoration: none;
-//                     margin: 0 10px;
-//                     padding: 10px;
-//                     color: white;
-//                     font-family: Arial, Helvetica, sans-serif;
-//                     font-style: normal;
-//                     font-size: 20px;
-//                 }
-//             }
-            
-//         }
-//     }
-// }

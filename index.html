@@ -16,7 +16,11 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand logo" href="index.html">MP</a><!--Logo-->
+                <a class="navbar-brand logo" href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-laptop" viewBox="0 0 16 16">
+                    <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5"/>
+                  </svg>
+                </a><!--Logo-->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon color-icono"></span>
@@ -24,19 +28,19 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.html"> < Inicio /> </a>
+                            <a class="nav-link" href="index.html"> Inicio  </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#aboutMe"> < About me /> </a>
+                            <a class="nav-link" href="#aboutMe">  Sobre Mí </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link gray" href="#tecnologias"> < Skills /> </a>
+                            <a class="nav-link gray" href="#tecnologias">  Proyectos  </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#proyectos"> < Projects />  </a>
+                            <a class="nav-link" href="#proyectos"> Tecnologias   </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link gray" href=""> < Contact me/> </a>
+                            <a class="nav-link gray" href="">  Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -49,12 +53,17 @@
         <section class="seccionInfo">
                 <div class="containerSeccionInfo">
                     <div class="infoContainer">
-                        <span class="title">
-                            Matias Patiño
-                        </span>
-                        <p class="subtitle">
-                            Frontend Devolper
-                        </p>
+                        <div class="titleContainer">
+                            <span class="title">
+                                Matias Patiño
+                            </span>
+
+                        </div>
+                        <div class="subtitleContainer">
+                            <p class="subtitle">
+                                Frontend Devolper
+                            </p>
+                        </div>
                         <div class="logosContactos">
                             <button>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
@@ -67,20 +76,15 @@
                                 <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
                               </svg>
                             </button>
-        
-                              <button>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
-                              </svg>
-                            </button>
                         </div>
+
                         <div class="downloadButton">
                             <button class="download"><a target="_blank" href="CV-Patiño-Matias.pdf">Descargar CV</a></button>
                         </div>
                     </div>
-                    <div class="imgContainer">
+                    <!-- <div class="imgContainer">
                         <img src="img/fondo.png" alt="" width="400px" height="400px">
-                    </div>
+                    </div> -->
                 </div>
         </section>
 
@@ -101,7 +105,7 @@
             <div class="proyectos-cards-container">
                 <article class="card">
                     <div class="img-card-container">
-                        <img src="./img/monkeyTech.png" alt="monkeyTech">
+                        <img src="./img/Captura de pantalla 2024-10-18 174416.png" alt="monkeyTech">
                     </div>
                     <div class="info-card-container">
                         <span class="title-card">MonkeyTech</span>
@@ -116,6 +120,14 @@
                         <div class="js">
                             <span>JavaScript</span>
                         </div>
+                    </div>
+                    <div class="botonVerProyecto">
+                        <button>
+                            <a href="https://matiasp-8.github.io/Desarrollo-Web-Flex_Coderhouse/" target="_blank">Ver Proyecto
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                                  </svg></a>
+                        </button>
                     </div>
                 </article>
             </div>

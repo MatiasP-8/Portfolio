@@ -15,9 +15,36 @@
             height: 430px;
             background-color: transparent;
             border: 1px dotted rgba(255, 255, 255, 0.1);
-            // background-color: rgba(255, 255, 255, 0.1);
-            // box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
             border-radius: 3px;
+            
+
+            // .info{
+            //     position: absolute;
+            //     top: 0;
+            //     left: -300px;
+            //     right: 0;
+            //     bottom: 0;
+            //     padding: 5px 20px;
+            //     background-color: rgba(255, 255, 255, 0.1);
+            //     color: red;
+            //     font-family: $fuenteOrbitron;
+            //     font-weight: bold;
+            //     display: flex;
+            //     align-items: center;
+            //     justify-content: center;
+            //     text-align: left;
+            //     opacity: 0;
+            //     transition: opacity 1s;
+            // }
+
+            // &:hover {
+            //     background-color: rgba(255, 255, 255, 0.1);
+        
+            //     .info {
+            //         opacity: 1; // Mostrar la información al hacer hover
+            //     }
+            // }
+
 
             .img-card-container{
                 img{
@@ -27,6 +54,20 @@
                     border-radius: 5px;
                     filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
                 }
+            }
+            .info-card-container{
+                margin: 5px 0;
+                text-align: left;
+
+                .title-card{
+                    margin: 0 10px;
+                    color: white;
+                    font-size: 1.1rem;
+                    font-family: $fuenteOrbitron;
+                    font-weight: 400;
+                    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);   
+                }
+
             }
 
             .lenguajes-proyectos{
@@ -63,19 +104,31 @@
                 }
             }
 
-            .info-card-container{
-                margin: 5px 0;
-                text-align: left;
+            .botonVerProyecto{
+                display: flex;
+                justify-content: right;
+                align-items: center;
+                text-align: center;
+                margin: 10px;
 
-                .title-card{
-                    margin: 0 10px;
-                    color: white;
-                    font-size: 1.1rem;
-                    font-family: $fuenteOrbitron;
-                    font-weight: 400;
-                    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);   
+                button{
+                    width: 100%;
+                    height: 40px;
+                    background-color: rgba(255, 255, 255, 0.1);
+                    border: none;
+                    outline: none;
+                    border-radius: 3px;
+                    
+
+                    a{
+                        text-decoration: none;
+                        color: #07D28D;
+                        font-family: $fuenteOrbitron;
+                        font-weight: 700;
+                        font-size: 15px;
+                    }
                 }
-
             }
+
         }
     }
