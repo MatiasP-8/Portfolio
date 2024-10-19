@@ -27,16 +27,80 @@ header nav .logo {
   font-weight: 500;
   font-family: "Onest", sans-serif;
 }
+header nav .logo:hover {
+  color: #3879E5;
+  scale: 1;
+}
 header nav .nav-link {
   text-decoration: none;
   font-weight: 500;
   margin: 0 3px;
   color: white;
   font-family: "Onest", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
 }
 header nav .nav-link:hover {
-  color: #273F78;
+  color: #3879E5;
+}
+
+.seccionInfo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.seccionInfo .containerSeccionInfo {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.seccionInfo .containerSeccionInfo .infoContainer .titleContainer .title {
+  color: white;
+  font-family: "Onest", sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.seccionInfo .containerSeccionInfo .infoContainer .subtitleContainer .subtitle {
+  color: #FDEF89;
+  font-family: "Onest", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.seccionInfo .containerSeccionInfo .logosContactos .btnContacto {
+  width: 150px;
+  height: 44px;
+  border-radius: 5px;
+  border: 1px solid white;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.seccionInfo .containerSeccionInfo .logosContactos .btnContacto svg {
+  color: white;
+}
+.seccionInfo .containerSeccionInfo .logosContactos .btnContacto span {
+  font-family: "Onest", sans-serif;
+  color: white;
+  font-weight: 500;
+}
+.seccionInfo .containerSeccionInfo .downloadButtonContainer {
+  margin: 5px 0;
+}
+.seccionInfo .containerSeccionInfo .downloadButtonContainer .download {
+  width: 305px;
+  height: 44px;
+  border-radius: 5px;
+  border: 1px solid white;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.seccionInfo .containerSeccionInfo .downloadButtonContainer .download a {
+  font-family: "Onest", sans-serif;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 .seccionSobreMiContainer {
@@ -50,9 +114,8 @@ header nav .nav-link:hover {
   margin: 25px;
   color: white;
   font-size: 2rem;
-  font-family: "orbitron";
+  font-family: "Onest", sans-serif;
   font-weight: 400;
-  letter-spacing: 10px;
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
   margin: 25px;
 }
@@ -63,12 +126,12 @@ header nav .nav-link:hover {
 }
 .seccionSobreMiContainer .infoAboutMe .infoPresentacion {
   font-size: 1.3rem;
-  font-family: "poppins";
-  font-weight: 100;
+  font-family: "Onest", sans-serif;
+  font-weight: 300;
   color: white;
 }
 .seccionSobreMiContainer .infoAboutMe .infoPresentacion .color {
-  color: #00FF99;
+  color: #FDEF89;
   font-weight: 500;
 }
 
@@ -83,8 +146,7 @@ header nav .nav-link:hover {
   margin: 25px;
   color: white;
   font-size: 2rem;
-  letter-spacing: 10px;
-  font-family: "orbitron";
+  font-family: "Onest", sans-serif;
   font-weight: 400;
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
 }

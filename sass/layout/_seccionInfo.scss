@@ -1,2 +1,77 @@
 @import '../utilities/variables';
 
+.seccionInfo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .containerSeccionInfo{
+        width: 50%;
+        height: 500px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        // background-color: #f5f5f5;
+        .infoContainer{
+            .titleContainer{
+                .title{
+                    color: white;
+                    font-family: $fuenteOnest;
+                    font-size: 3rem;
+                    font-weight: 600;
+            }
+        }
+        
+        .subtitleContainer{
+            .subtitle{
+                color:#FDEF89 ;
+                font-family: $fuenteOnest;
+                font-size: 1.2rem;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .logosContactos{
+        .btnContacto{
+            width: 150px;
+            height: 44px;
+            border-radius: 5px;
+            border: 1px solid white;
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.1);
+
+            svg{
+                color: white;
+            }
+
+            span{
+                font-family: $fuenteOnest;
+                color: white;
+                font-weight: 500;
+            }
+
+        }
+    }
+    
+    .downloadButtonContainer{
+        margin: 5px 0;
+        .download{
+            width: 305px;
+            height: 44px;
+            border-radius: 5px;
+            border: 1px solid white;
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.1);
+            a{
+                font-family: $fuenteOnest;
+                color: white;
+                font-weight: 500;
+                text-decoration: none;
+            }
+        }
+    }
+}
+}
