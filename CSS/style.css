@@ -54,8 +54,32 @@ header nav .nav-link:hover {
   width: 50%;
   height: 500px;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+.seccionInfo .containerSeccionInfo .fotoContainer {
+  display: flex;
   justify-content: left;
   align-items: center;
+  gap: 10px;
+}
+.seccionInfo .containerSeccionInfo .fotoContainer .foto {
+  background-color: white;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+}
+.seccionInfo .containerSeccionInfo .fotoContainer .botonDisponible .disponible {
+  width: 200px;
+  height: 44px;
+  border-radius: 75px;
+  border: 1px solid #FDEF89;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-family: "Onest", sans-serif;
+  color: #FDEF89;
+  font-weight: 500;
 }
 .seccionInfo .containerSeccionInfo .infoContainer .titleContainer .title {
   color: white;
@@ -153,40 +177,36 @@ header nav .nav-link:hover {
 
 .containerCardsLenguajes {
   width: 100%;
-  height: 300px;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 200px;
 }
 .containerCardsLenguajes .titleTecnologias {
-  margin: 25px;
   color: white;
-  letter-spacing: 10px;
   font-size: 2rem;
-  font-family: "orbitron";
+  font-family: "Onest", sans-serif;
   font-weight: 400;
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
 }
 .containerCardsLenguajes .tecnologiasContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
 
 .cardTeconologias {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
-  border-radius: 3px;
+  border-radius: 100%;
+  border: 1px solid white;
   background-color: rgba(255, 255, 255, 0.03);
   transition: 1s;
 }
@@ -195,13 +215,13 @@ header nav .nav-link:hover {
   cursor: pointer;
 }
 .cardTeconologias .imgCardContainer img {
-  width: 170px;
-  height: 130px;
+  width: 50px;
+  height: 50px;
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
 }
 .cardTeconologias .infoCardTeconologias {
   font-family: "poppins";
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   color: white;
   font-weight: 500;
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
