@@ -219,7 +219,7 @@ header nav .nav-link:hover {
   text-align: center;
   gap: 25px;
 }
-.proyectos-container .infoProyecto .lenguajesUsados .html, .proyectos-container .infoProyecto .lenguajesUsados .css, .proyectos-container .infoProyecto .lenguajesUsados .sass {
+.proyectos-container .infoProyecto .lenguajesUsados .html, .proyectos-container .infoProyecto .lenguajesUsados .css, .proyectos-container .infoProyecto .lenguajesUsados .sass, .proyectos-container .infoProyecto .lenguajesUsados .js {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -231,20 +231,25 @@ header nav .nav-link:hover {
   border: 1px solid white;
   border-radius: 25px;
 }
-.proyectos-container .infoProyecto .lenguajesUsados .html .imgHtmlContainer, .proyectos-container .infoProyecto .lenguajesUsados .html .imgCssContainer, .proyectos-container .infoProyecto .lenguajesUsados .html .imgScssContainer, .proyectos-container .infoProyecto .lenguajesUsados .css .imgHtmlContainer, .proyectos-container .infoProyecto .lenguajesUsados .css .imgCssContainer, .proyectos-container .infoProyecto .lenguajesUsados .css .imgScssContainer, .proyectos-container .infoProyecto .lenguajesUsados .sass .imgHtmlContainer, .proyectos-container .infoProyecto .lenguajesUsados .sass .imgCssContainer, .proyectos-container .infoProyecto .lenguajesUsados .sass .imgScssContainer {
+.proyectos-container .infoProyecto .lenguajesUsados .html .imgHtmlContainer, .proyectos-container .infoProyecto .lenguajesUsados .html .imgCssContainer, .proyectos-container .infoProyecto .lenguajesUsados .html .imgScssContainer, .proyectos-container .infoProyecto .lenguajesUsados .css .imgHtmlContainer, .proyectos-container .infoProyecto .lenguajesUsados .css .imgCssContainer, .proyectos-container .infoProyecto .lenguajesUsados .css .imgScssContainer, .proyectos-container .infoProyecto .lenguajesUsados .sass .imgHtmlContainer, .proyectos-container .infoProyecto .lenguajesUsados .sass .imgCssContainer, .proyectos-container .infoProyecto .lenguajesUsados .sass .imgScssContainer, .proyectos-container .infoProyecto .lenguajesUsados .js .imgHtmlContainer, .proyectos-container .infoProyecto .lenguajesUsados .js .imgCssContainer, .proyectos-container .infoProyecto .lenguajesUsados .js .imgScssContainer {
   margin: 0 5px 0 0;
 }
-.proyectos-container .infoProyecto .lenguajesUsados .html .imgHtmlContainer img, .proyectos-container .infoProyecto .lenguajesUsados .html .imgCssContainer img, .proyectos-container .infoProyecto .lenguajesUsados .html .imgScssContainer img, .proyectos-container .infoProyecto .lenguajesUsados .css .imgHtmlContainer img, .proyectos-container .infoProyecto .lenguajesUsados .css .imgCssContainer img, .proyectos-container .infoProyecto .lenguajesUsados .css .imgScssContainer img, .proyectos-container .infoProyecto .lenguajesUsados .sass .imgHtmlContainer img, .proyectos-container .infoProyecto .lenguajesUsados .sass .imgCssContainer img, .proyectos-container .infoProyecto .lenguajesUsados .sass .imgScssContainer img {
+.proyectos-container .infoProyecto .lenguajesUsados .html .imgHtmlContainer img, .proyectos-container .infoProyecto .lenguajesUsados .html .imgCssContainer img, .proyectos-container .infoProyecto .lenguajesUsados .html .imgScssContainer img, .proyectos-container .infoProyecto .lenguajesUsados .css .imgHtmlContainer img, .proyectos-container .infoProyecto .lenguajesUsados .css .imgCssContainer img, .proyectos-container .infoProyecto .lenguajesUsados .css .imgScssContainer img, .proyectos-container .infoProyecto .lenguajesUsados .sass .imgHtmlContainer img, .proyectos-container .infoProyecto .lenguajesUsados .sass .imgCssContainer img, .proyectos-container .infoProyecto .lenguajesUsados .sass .imgScssContainer img, .proyectos-container .infoProyecto .lenguajesUsados .js .imgHtmlContainer img, .proyectos-container .infoProyecto .lenguajesUsados .js .imgCssContainer img, .proyectos-container .infoProyecto .lenguajesUsados .js .imgScssContainer img {
   width: 35px;
   height: 35px;
 }
-.proyectos-container .infoProyecto .lenguajesUsados .html .nombreLenguaje, .proyectos-container .infoProyecto .lenguajesUsados .css .nombreLenguaje, .proyectos-container .infoProyecto .lenguajesUsados .sass .nombreLenguaje {
+.proyectos-container .infoProyecto .lenguajesUsados .html .imgJsContainer img, .proyectos-container .infoProyecto .lenguajesUsados .css .imgJsContainer img, .proyectos-container .infoProyecto .lenguajesUsados .sass .imgJsContainer img, .proyectos-container .infoProyecto .lenguajesUsados .js .imgJsContainer img {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+}
+.proyectos-container .infoProyecto .lenguajesUsados .html .nombreLenguaje, .proyectos-container .infoProyecto .lenguajesUsados .css .nombreLenguaje, .proyectos-container .infoProyecto .lenguajesUsados .sass .nombreLenguaje, .proyectos-container .infoProyecto .lenguajesUsados .js .nombreLenguaje {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-.proyectos-container .infoProyecto .lenguajesUsados .html .nombreLenguaje span, .proyectos-container .infoProyecto .lenguajesUsados .css .nombreLenguaje span, .proyectos-container .infoProyecto .lenguajesUsados .sass .nombreLenguaje span {
+.proyectos-container .infoProyecto .lenguajesUsados .html .nombreLenguaje span, .proyectos-container .infoProyecto .lenguajesUsados .css .nombreLenguaje span, .proyectos-container .infoProyecto .lenguajesUsados .sass .nombreLenguaje span, .proyectos-container .infoProyecto .lenguajesUsados .js .nombreLenguaje span {
   text-align: center;
   color: white;
   font-size: 0.8rem;
