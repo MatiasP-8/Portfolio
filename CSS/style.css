@@ -252,7 +252,7 @@ header nav .nav-link:hover {
 .proyectos-container .infoProyecto .lenguajesUsados .html .nombreLenguaje span, .proyectos-container .infoProyecto .lenguajesUsados .css .nombreLenguaje span, .proyectos-container .infoProyecto .lenguajesUsados .sass .nombreLenguaje span, .proyectos-container .infoProyecto .lenguajesUsados .js .nombreLenguaje span {
   text-align: center;
   color: white;
-  font-size: 0.8rem;
+  font-size: 12px;
   font-family: "Onest", sans-serif;
   font-weight: 500;
 }
@@ -418,7 +418,7 @@ header nav .nav-link:hover {
   height: 360px;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(253, 239, 137, 0.4470588235);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .proyectos-cards-container .card .img-card-container img {
   padding: 3px 2px;
