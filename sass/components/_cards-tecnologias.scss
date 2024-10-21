@@ -1,23 +1,101 @@
-      
-        .cardTeconologias{
-            width: 100px;
-            height: 100px;
+      @import '../utilities/variables';
+
+        .cardTeconologias {
+            width: 90px;
+            height: 90px;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
             text-align: center;
-            border-radius: 100%;
-            border: 1px solid white;
-            background-color: rgba(255, 255, 255, 0.030);
-            transition: 1s;
+            border-radius: 50px;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.03);
+            position: relative; // Para el efecto de luz
+        
 
-
-            &:hover{
-                background-color: rgba(255, 255, 255, .1);
-                cursor: pointer;
+            #html,#git{
+                &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(229, 83, 45, 0.2); // Color con menor opacidad
+                filter: blur(10px); // Menos desenfoque
+                border-radius: 50px; // Redondear bordes
+                z-index: -1; // Asegura que esté detrás del contenido
+            }
+            }
+        
+            #react,#css{
+                &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(27, 161, 204, 0.2)
+                ; // Color con menor opacidad
+                filter: blur(10px); // Menos desenfoque
+                border-radius: 30px; // Redondear bordes
+                z-index: -1; // Asegura que esté detrás del contenido
+            }
             }
 
+            #sql,#php{
+                &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(255, 255, 255, 0.1)
+                ; // Color con menor opacidad
+                filter: blur(10px); // Menos desenfoque
+                border-radius: 30px; // Redondear bordes
+                z-index: -1; // Asegura que esté detrás del contenido
+            }
+            }
+
+            #sass{
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: rgba(207, 108, 156, 0.2)
+                    ; // Color con menor opacidad
+                    filter: blur(10px); // Menos desenfoque
+                    border-radius: 30px; // Redondear bordes
+                    z-index: -1; // Asegura que esté detrás del contenido
+                }
+            }
+
+
+            #js{
+                &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(240, 220, 85, 0.2)
+                ; // Color con menor opacidad
+                filter: blur(10px); // Menos desenfoque
+                border-radius: 30px; // Redondear bordes
+                z-index: -1; // Asegura que esté detrás del contenido
+            }
+            }
+
+
+            
             .imgCardContainer{
                 img{
                     width: 50px;
@@ -27,8 +105,8 @@
             }
 
             .infoCardTeconologias{
-                font-family: $fuentePoppins;
-                font-size: .9rem;
+                font-family: $fuenteOnest;
+                font-size: .7rem;
                 color: white;
                 font-weight: 500;
                 text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);

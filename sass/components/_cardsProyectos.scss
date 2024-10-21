@@ -2,133 +2,32 @@
     .proyectos-cards-container{
         display: flex;
         justify-content: center;
-        // align-items: center;
+        align-items: center;
+        flex-direction: row;
+        width: 80%;
         gap: 25px;
 
 
         .card{
             display: flex;
-            justify-content: start;
-            // align-items: center;
-            margin: 35px 0 70px 0;
-            width: 380px;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
             height: 430px;
+            border: none;
             background-color: transparent;
-            border: 1px dotted rgba(255, 255, 255, 0.1);
             border-radius: 3px;
-            
-
-            // .info{
-            //     position: absolute;
-            //     top: 0;
-            //     left: -300px;
-            //     right: 0;
-            //     bottom: 0;
-            //     padding: 5px 20px;
-            //     background-color: rgba(255, 255, 255, 0.1);
-            //     color: red;
-            //     font-family: $fuenteOrbitron;
-            //     font-weight: bold;
-            //     display: flex;
-            //     align-items: center;
-            //     justify-content: center;
-            //     text-align: left;
-            //     opacity: 0;
-            //     transition: opacity 1s;
-            // }
-
-            // &:hover {
-            //     background-color: rgba(255, 255, 255, 0.1);
         
-            //     .info {
-            //         opacity: 1; // Mostrar la información al hacer hover
-            //     }
-            // }
-
 
             .img-card-container{
                 img{
                     padding: 3px 2px;
-                    width: 380px;
-                    height: 300px;
-                    border-radius: 5px;
+                    width: 400px;
+                    height: 350px;
                     filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+                    border-radius: 5px;
                 }
             }
-            .info-card-container{
-                margin: 5px 0;
-                text-align: left;
-
-                .title-card{
-                    margin: 0 10px;
-                    color: white;
-                    font-size: 1.1rem;
-                    font-family: $fuenteOrbitron;
-                    font-weight: 400;
-                    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);   
-                }
-
-            }
-
-            .lenguajes-proyectos{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                gap:10px;
-
-                .html{
-                    width: 100px;
-                    margin: 5px;
-                    background-color: rgba(255, 255, 255, 0.1);
-                    color: #E5532D;
-                    font-weight: 600;
-                    font-family: $fuenteOrbitron;
-                }
-                .sass{
-                    width: 100px;
-                    margin: 5px;
-                    background-color: rgba(255, 255, 255, 0.1);
-                    color: #C76897;
-                    font-weight: 600;
-                    font-family: $fuenteOrbitron;
-                }
-
-                .js{
-                    width: 120px;
-                    margin: 5px;
-                    background-color: rgba(255, 255, 255, 0.1);
-                    color: #EFD81D;
-                    font-weight: 600;
-                    font-family: $fuenteOrbitron;
-                }
-            }
-
-            .botonVerProyecto{
-                display: flex;
-                justify-content: right;
-                align-items: center;
-                text-align: center;
-                margin: 10px;
-
-                button{
-                    width: 100%;
-                    height: 40px;
-                    background-color: rgba(255, 255, 255, 0.1);
-                    border: none;
-                    outline: none;
-                    border-radius: 3px;
-                    
-
-                    a{
-                        text-decoration: none;
-                        color: #07D28D;
-                        font-family: $fuenteOrbitron;
-                        font-weight: 700;
-                        font-size: 15px;
-                    }
-                }
-            }
-
+          
         }
     }

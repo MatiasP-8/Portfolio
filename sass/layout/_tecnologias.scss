@@ -16,10 +16,12 @@
     }
 
     .tecnologiasContainer{
-       display: flex;
-       justify-content: center;
-       align-items: center;
-        gap: 20px;
+    display:grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(4,1fr);   
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
         
 
     }

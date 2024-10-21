@@ -166,13 +166,95 @@ header nav .nav-link:hover {
   justify-content: center;
   align-items: center;
 }
-.proyectos-container h2 {
+.proyectos-container .tituloProyectos {
   margin: 25px;
   color: white;
   font-size: 2rem;
   font-family: "Onest", sans-serif;
   font-weight: 400;
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
+}
+.proyectos-container .infoProyecto {
+  width: 50%;
+  height: 430px;
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  gap: 35px;
+}
+.proyectos-container .infoProyecto h2 {
+  margin: 5px;
+  color: white;
+  font-size: 2rem;
+  font-family: "Onest", sans-serif;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
+}
+.proyectos-container .infoProyecto .lenguajesUsados {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+  gap: 25px;
+}
+.proyectos-container .infoProyecto .lenguajesUsados .html, .proyectos-container .infoProyecto .lenguajesUsados .css, .proyectos-container .infoProyecto .lenguajesUsados .sass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  width: 100px;
+  height: 35px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
+  border-radius: 25px;
+}
+.proyectos-container .infoProyecto .lenguajesUsados .html .imgHtmlContainer, .proyectos-container .infoProyecto .lenguajesUsados .html .imgCssContainer, .proyectos-container .infoProyecto .lenguajesUsados .html .imgScssContainer, .proyectos-container .infoProyecto .lenguajesUsados .css .imgHtmlContainer, .proyectos-container .infoProyecto .lenguajesUsados .css .imgCssContainer, .proyectos-container .infoProyecto .lenguajesUsados .css .imgScssContainer, .proyectos-container .infoProyecto .lenguajesUsados .sass .imgHtmlContainer, .proyectos-container .infoProyecto .lenguajesUsados .sass .imgCssContainer, .proyectos-container .infoProyecto .lenguajesUsados .sass .imgScssContainer {
+  margin: 0 5px 0 0;
+}
+.proyectos-container .infoProyecto .lenguajesUsados .html .imgHtmlContainer img, .proyectos-container .infoProyecto .lenguajesUsados .html .imgCssContainer img, .proyectos-container .infoProyecto .lenguajesUsados .html .imgScssContainer img, .proyectos-container .infoProyecto .lenguajesUsados .css .imgHtmlContainer img, .proyectos-container .infoProyecto .lenguajesUsados .css .imgCssContainer img, .proyectos-container .infoProyecto .lenguajesUsados .css .imgScssContainer img, .proyectos-container .infoProyecto .lenguajesUsados .sass .imgHtmlContainer img, .proyectos-container .infoProyecto .lenguajesUsados .sass .imgCssContainer img, .proyectos-container .infoProyecto .lenguajesUsados .sass .imgScssContainer img {
+  width: 30px;
+  height: 30px;
+}
+.proyectos-container .infoProyecto .lenguajesUsados .html .nombreLenguaje, .proyectos-container .infoProyecto .lenguajesUsados .css .nombreLenguaje, .proyectos-container .infoProyecto .lenguajesUsados .sass .nombreLenguaje {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.proyectos-container .infoProyecto .lenguajesUsados .html .nombreLenguaje span, .proyectos-container .infoProyecto .lenguajesUsados .css .nombreLenguaje span, .proyectos-container .infoProyecto .lenguajesUsados .sass .nombreLenguaje span {
+  text-align: center;
+  color: white;
+  font-size: 0.8rem;
+  font-family: "Onest", sans-serif;
+  font-weight: 400;
+}
+.proyectos-container .infoProyecto p {
+  color: #9098A3;
+  font-size: 1rem;
+  font-family: "Onest", sans-serif;
+  font-weight: 500;
+}
+.proyectos-container .infoProyecto button {
+  width: 150px;
+  height: 44px;
+  border-radius: 10px;
+  border: 1px solid white;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.proyectos-container .infoProyecto button svg {
+  width: 25px;
+  height: 25px;
+  color: white;
+}
+.proyectos-container .infoProyecto button a {
+  font-family: "Onest", sans-serif;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 .containerCardsLenguajes {
@@ -191,28 +273,86 @@ header nav .nav-link:hover {
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
 }
 .containerCardsLenguajes .tecnologiasContainer {
-  display: flex;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 25px;
 }
 
 .cardTeconologias {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
-  border-radius: 100%;
-  border: 1px solid white;
+  border-radius: 50px;
+  border: none;
   background-color: rgba(255, 255, 255, 0.03);
-  transition: 1s;
+  position: relative;
 }
-.cardTeconologias:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  cursor: pointer;
+.cardTeconologias #html::before, .cardTeconologias #git::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(229, 83, 45, 0.2);
+  filter: blur(10px);
+  border-radius: 50px;
+  z-index: -1;
+}
+.cardTeconologias #react::before, .cardTeconologias #css::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(27, 161, 204, 0.2);
+  filter: blur(10px);
+  border-radius: 30px;
+  z-index: -1;
+}
+.cardTeconologias #sql::before, .cardTeconologias #php::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.1);
+  filter: blur(10px);
+  border-radius: 30px;
+  z-index: -1;
+}
+.cardTeconologias #sass::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(207, 108, 156, 0.2);
+  filter: blur(10px);
+  border-radius: 30px;
+  z-index: -1;
+}
+.cardTeconologias #js::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(240, 220, 85, 0.2);
+  filter: blur(10px);
+  border-radius: 30px;
+  z-index: -1;
 }
 .cardTeconologias .imgCardContainer img {
   width: 50px;
@@ -220,8 +360,8 @@ header nav .nav-link:hover {
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
 }
 .cardTeconologias .infoCardTeconologias {
-  font-family: "poppins";
-  font-size: 0.9rem;
+  font-family: "Onest", sans-serif;
+  font-size: 0.7rem;
   color: white;
   font-weight: 500;
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
@@ -230,89 +370,27 @@ header nav .nav-link:hover {
 .proyectos-cards-container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 80%;
   gap: 25px;
 }
 .proyectos-cards-container .card {
   display: flex;
-  justify-content: start;
-  margin: 35px 0 70px 0;
-  width: 380px;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
   height: 430px;
+  border: none;
   background-color: transparent;
-  border: 1px dotted rgba(255, 255, 255, 0.1);
   border-radius: 3px;
 }
 .proyectos-cards-container .card .img-card-container img {
   padding: 3px 2px;
-  width: 380px;
-  height: 300px;
-  border-radius: 5px;
+  width: 400px;
+  height: 350px;
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
-}
-.proyectos-cards-container .card .info-card-container {
-  margin: 5px 0;
-  text-align: left;
-}
-.proyectos-cards-container .card .info-card-container .title-card {
-  margin: 0 10px;
-  color: white;
-  font-size: 1.1rem;
-  font-family: "orbitron";
-  font-weight: 400;
-  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
-}
-.proyectos-cards-container .card .lenguajes-proyectos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 10px;
-}
-.proyectos-cards-container .card .lenguajes-proyectos .html {
-  width: 100px;
-  margin: 5px;
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #E5532D;
-  font-weight: 600;
-  font-family: "orbitron";
-}
-.proyectos-cards-container .card .lenguajes-proyectos .sass {
-  width: 100px;
-  margin: 5px;
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #C76897;
-  font-weight: 600;
-  font-family: "orbitron";
-}
-.proyectos-cards-container .card .lenguajes-proyectos .js {
-  width: 120px;
-  margin: 5px;
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #EFD81D;
-  font-weight: 600;
-  font-family: "orbitron";
-}
-.proyectos-cards-container .card .botonVerProyecto {
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  text-align: center;
-  margin: 10px;
-}
-.proyectos-cards-container .card .botonVerProyecto button {
-  width: 100%;
-  height: 40px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border: none;
-  outline: none;
-  border-radius: 3px;
-}
-.proyectos-cards-container .card .botonVerProyecto button a {
-  text-decoration: none;
-  color: #07D28D;
-  font-family: "orbitron";
-  font-weight: 700;
-  font-size: 15px;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
