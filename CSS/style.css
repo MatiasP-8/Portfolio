@@ -64,11 +64,10 @@ header nav .nav-link:hover {
   align-items: center;
   gap: 10px;
 }
-.seccionInfo .containerSeccionInfo .fotoContainer .foto {
-  background-color: white;
+.seccionInfo .containerSeccionInfo .fotoContainer .foto img {
   width: 80px;
   height: 80px;
-  border-radius: 100%;
+  filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
 }
 .seccionInfo .containerSeccionInfo .fotoContainer .botonDisponible .disponible {
   width: 200px;
@@ -129,6 +128,7 @@ header nav .nav-link:hover {
 
 .seccionSobreMiContainer {
   width: 100%;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -137,26 +137,46 @@ header nav .nav-link:hover {
 .seccionSobreMiContainer .titleSobreMi {
   margin: 25px;
   color: white;
-  font-size: 2rem;
+  font-size: 2.3rem;
   font-family: "Onest", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
   margin: 25px;
 }
 .seccionSobreMiContainer .infoAboutMe {
-  max-width: 70%;
-  text-align: left;
-  margin: 25px;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.seccionSobreMiContainer .infoAboutMe .infoPresentacion {
+.seccionSobreMiContainer .infoAboutMe .infoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+}
+.seccionSobreMiContainer .infoAboutMe .infoContainer .infoPresentacion {
   font-size: 1.3rem;
   font-family: "Onest", sans-serif;
   font-weight: 300;
-  color: white;
+  color: #9098A3;
 }
-.seccionSobreMiContainer .infoAboutMe .infoPresentacion .color {
+.seccionSobreMiContainer .infoAboutMe .infoContainer .infoPresentacion .color {
   color: #FDEF89;
   font-weight: 500;
+}
+.seccionSobreMiContainer .infoAboutMe .imgSobreMiContainer {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.01);
+  border-radius: 10px;
+}
+.seccionSobreMiContainer .infoAboutMe .imgSobreMiContainer img {
+  width: 300px;
+  height: 300px;
+  filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
 }
 
 .proyectos-container {
@@ -167,11 +187,11 @@ header nav .nav-link:hover {
   align-items: center;
 }
 .proyectos-container .tituloProyectos {
-  margin: 25px;
+  margin: 10px;
   color: white;
-  font-size: 2rem;
+  font-size: 2.3rem;
   font-family: "Onest", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
 }
 .proyectos-container .infoProyecto {
@@ -215,8 +235,8 @@ header nav .nav-link:hover {
   margin: 0 5px 0 0;
 }
 .proyectos-container .infoProyecto .lenguajesUsados .html .imgHtmlContainer img, .proyectos-container .infoProyecto .lenguajesUsados .html .imgCssContainer img, .proyectos-container .infoProyecto .lenguajesUsados .html .imgScssContainer img, .proyectos-container .infoProyecto .lenguajesUsados .css .imgHtmlContainer img, .proyectos-container .infoProyecto .lenguajesUsados .css .imgCssContainer img, .proyectos-container .infoProyecto .lenguajesUsados .css .imgScssContainer img, .proyectos-container .infoProyecto .lenguajesUsados .sass .imgHtmlContainer img, .proyectos-container .infoProyecto .lenguajesUsados .sass .imgCssContainer img, .proyectos-container .infoProyecto .lenguajesUsados .sass .imgScssContainer img {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
 }
 .proyectos-container .infoProyecto .lenguajesUsados .html .nombreLenguaje, .proyectos-container .infoProyecto .lenguajesUsados .css .nombreLenguaje, .proyectos-container .infoProyecto .lenguajesUsados .sass .nombreLenguaje {
   display: flex;
@@ -229,7 +249,7 @@ header nav .nav-link:hover {
   color: white;
   font-size: 0.8rem;
   font-family: "Onest", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
 }
 .proyectos-container .infoProyecto p {
   color: #9098A3;
@@ -259,23 +279,23 @@ header nav .nav-link:hover {
 
 .containerCardsLenguajes {
   width: 100%;
-  height: auto;
+  height: 300px;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 .containerCardsLenguajes .titleTecnologias {
+  margin: 25px 0;
   color: white;
-  font-size: 2rem;
+  font-size: 2.3rem;
   font-family: "Onest", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
 }
 .containerCardsLenguajes .tecnologiasContainer {
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 25px;
@@ -385,12 +405,26 @@ header nav .nav-link:hover {
   background-color: transparent;
   border-radius: 3px;
 }
+.proyectos-cards-container .card .img-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 410px;
+  height: 360px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(253, 239, 137, 0.4470588235);
+}
 .proyectos-cards-container .card .img-card-container img {
   padding: 3px 2px;
   width: 400px;
   height: 350px;
   filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
   border-radius: 5px;
+  transition: 1s;
+}
+.proyectos-cards-container .card .img-card-container img:hover {
+  scale: 0.99;
 }
 
 /*# sourceMappingURL=style.css.map */
