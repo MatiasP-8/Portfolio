@@ -7,6 +7,8 @@
 }
 
 body{
-    background-color: #171B33;  /*Azul oscuro con transparencia*/
+    background-image: linear-gradient(to top, #0c213b, #0c223c, #0c223e, #0c233f, #0c2341);
+    // background-image: linear-gradient(to right top, #151b23, #1a232d, #202b38, #253343, #2b3b4f);
+    // background-color: #171B33;  /*Azul oscuro con transparencia*/
     scroll-behavior: smooth;
 }
