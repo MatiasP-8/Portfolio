@@ -202,7 +202,7 @@ header nav .nav-link:hover {
   justify-content: center;
   align-items: left;
   flex-direction: column;
-  gap: 35px;
+  gap: 20px;
 }
 .proyectos-container .infoProyecto h2 {
   margin: 5px;
@@ -217,7 +217,7 @@ header nav .nav-link:hover {
   justify-content: left;
   align-items: center;
   text-align: center;
-  gap: 25px;
+  gap: 15px;
 }
 .proyectos-container .infoProyecto .lenguajesUsados .html, .proyectos-container .infoProyecto .lenguajesUsados .css, .proyectos-container .infoProyecto .lenguajesUsados .sass, .proyectos-container .infoProyecto .lenguajesUsados .js {
   display: flex;
@@ -229,19 +229,18 @@ header nav .nav-link:hover {
   height: 35px;
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid white;
-  border-radius: 25px;
+  border-radius: 15px;
 }
 .proyectos-container .infoProyecto .lenguajesUsados .html .imgHtmlContainer, .proyectos-container .infoProyecto .lenguajesUsados .html .imgCssContainer, .proyectos-container .infoProyecto .lenguajesUsados .html .imgScssContainer, .proyectos-container .infoProyecto .lenguajesUsados .css .imgHtmlContainer, .proyectos-container .infoProyecto .lenguajesUsados .css .imgCssContainer, .proyectos-container .infoProyecto .lenguajesUsados .css .imgScssContainer, .proyectos-container .infoProyecto .lenguajesUsados .sass .imgHtmlContainer, .proyectos-container .infoProyecto .lenguajesUsados .sass .imgCssContainer, .proyectos-container .infoProyecto .lenguajesUsados .sass .imgScssContainer, .proyectos-container .infoProyecto .lenguajesUsados .js .imgHtmlContainer, .proyectos-container .infoProyecto .lenguajesUsados .js .imgCssContainer, .proyectos-container .infoProyecto .lenguajesUsados .js .imgScssContainer {
   margin: 0 5px 0 0;
 }
 .proyectos-container .infoProyecto .lenguajesUsados .html .imgHtmlContainer img, .proyectos-container .infoProyecto .lenguajesUsados .html .imgCssContainer img, .proyectos-container .infoProyecto .lenguajesUsados .html .imgScssContainer img, .proyectos-container .infoProyecto .lenguajesUsados .css .imgHtmlContainer img, .proyectos-container .infoProyecto .lenguajesUsados .css .imgCssContainer img, .proyectos-container .infoProyecto .lenguajesUsados .css .imgScssContainer img, .proyectos-container .infoProyecto .lenguajesUsados .sass .imgHtmlContainer img, .proyectos-container .infoProyecto .lenguajesUsados .sass .imgCssContainer img, .proyectos-container .infoProyecto .lenguajesUsados .sass .imgScssContainer img, .proyectos-container .infoProyecto .lenguajesUsados .js .imgHtmlContainer img, .proyectos-container .infoProyecto .lenguajesUsados .js .imgCssContainer img, .proyectos-container .infoProyecto .lenguajesUsados .js .imgScssContainer img {
-  width: 35px;
-  height: 35px;
-}
-.proyectos-container .infoProyecto .lenguajesUsados .html .imgJsContainer img, .proyectos-container .infoProyecto .lenguajesUsados .css .imgJsContainer img, .proyectos-container .infoProyecto .lenguajesUsados .sass .imgJsContainer img, .proyectos-container .infoProyecto .lenguajesUsados .js .imgJsContainer img {
   width: 25px;
   height: 25px;
-  border-radius: 100%;
+}
+.proyectos-container .infoProyecto .lenguajesUsados .html .imgJsContainer img, .proyectos-container .infoProyecto .lenguajesUsados .css .imgJsContainer img, .proyectos-container .infoProyecto .lenguajesUsados .sass .imgJsContainer img, .proyectos-container .infoProyecto .lenguajesUsados .js .imgJsContainer img {
+  width: 20px;
+  height: 20px;
 }
 .proyectos-container .infoProyecto .lenguajesUsados .html .nombreLenguaje, .proyectos-container .infoProyecto .lenguajesUsados .css .nombreLenguaje, .proyectos-container .infoProyecto .lenguajesUsados .sass .nombreLenguaje, .proyectos-container .infoProyecto .lenguajesUsados .js .nombreLenguaje {
   display: flex;
@@ -254,7 +253,7 @@ header nav .nav-link:hover {
   color: white;
   font-size: 12px;
   font-family: "Onest", sans-serif;
-  font-weight: 500;
+  font-weight: 100;
 }
 .proyectos-container .infoProyecto p {
   color: #9098A3;
@@ -305,6 +304,97 @@ header nav .nav-link:hover {
   gap: 25px;
 }
 
+@media (max-width: 720px) {
+  .seccionInfo .containerSeccionInfo {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .seccionInfo .containerSeccionInfo .fotoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .seccionInfo .containerSeccionInfo .fotoContainer .foto img {
+    width: 60px;
+    height: 60px;
+  }
+  .seccionInfo .containerSeccionInfo .fotoContainer .botonDisponible .disponible {
+    width: 170px;
+    font-size: 0.9rem;
+  }
+  .seccionInfo .containerSeccionInfo .infoContainer .titleContainer .title {
+    font-size: 2.7rem;
+  }
+  .proyectos-container .tituloProyectos {
+    font-size: 2rem;
+  }
+  .proyectos-container .proyectos-cards-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .proyectos-container .proyectos-cards-container .card {
+    width: 80%;
+    height: 350px;
+  }
+  .proyectos-container .proyectos-cards-container .card .img-card-container {
+    width: 350px;
+    height: 360px;
+  }
+  .proyectos-container .proyectos-cards-container .card .img-card-container img {
+    padding: 3px 2px;
+    width: 350px;
+  }
+  .proyectos-container .infoProyecto {
+    width: 80%;
+  }
+  .proyectos-container .infoProyecto .lenguajesUsados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+  }
+  .containerCardsLenguajes {
+    height: auto;
+  }
+  .containerCardsLenguajes .tecnologiasContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+  .seccionSobreMiContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0 0 0;
+  }
+  .seccionSobreMiContainer .infoAboutMe {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .seccionSobreMiContainer .infoAboutMe .infoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+  }
+  .seccionSobreMiContainer .infoAboutMe .infoContainer .infoPresentacion {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  .seccionSobreMiContainer .infoAboutMe .imgSobreMiContainer img {
+    display: none;
+  }
+}
 .cardTeconologias {
   width: 90px;
   height: 90px;

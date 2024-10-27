@@ -1,0 +1,153 @@
+@media(max-width:720px){
+    
+    //Seccion Principal
+    .seccionInfo{
+        .containerSeccionInfo{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            .fotoContainer{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                .foto{
+    
+                    img{
+                        width: 60px;
+                        height: 60px;
+    
+                    }
+                }
+    
+                .botonDisponible{
+                    .disponible{
+                        width: 170px;
+                        font-size:.9rem ;
+                    }
+                }
+            }
+    
+            .infoContainer{
+                .titleContainer{
+                    .title{
+                        font-size: 2.7rem;
+                }
+            }
+        }
+    }
+    }
+
+
+    .proyectos-container{    
+        .tituloProyectos{
+            font-size: 2rem;
+        }
+
+        .proyectos-cards-container{
+            flex-direction: column;
+            width: 100%;
+
+            .card{
+                width: 80%;
+                height: 350px;
+    
+                .img-card-container{
+                    width: 350px;
+                    height: 360px;
+                    img{
+                        padding: 3px 2px;
+                        width: 350px;
+                    }
+    
+                }
+                
+            }
+        }
+    
+    
+    
+        .infoProyecto{
+            width: 80%;
+            .lenguajesUsados{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                gap: 5px;
+
+            }
+    }
+}
+
+
+
+//Tecnologias
+.containerCardsLenguajes{
+    height: auto;
+
+    .tecnologiasContainer{
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+       grid-template-rows: repeat(2,1fr);
+       justify-content: center;
+       align-items: center;
+    
+    }
+}
+
+
+//Sobre mi 
+
+.seccionSobreMiContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0 0 0 ;
+    
+    // .titleSobreMi{
+    //     margin: 25px;
+    //     color: white;
+    //     font-size: 2.3rem;
+    //     font-family: $fuenteOnest;
+    //     font-weight: 700;
+    //     // letter-spacing: 10px;
+    //     text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
+    //     margin: 25px;
+    // }
+
+    .infoAboutMe{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .infoContainer{
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            width: 95%;
+
+            .infoPresentacion{
+                font-size: 1.1rem;
+                font-weight: 500;
+            }
+        }
+
+        .imgSobreMiContainer{
+           img{
+            display: none;
+           }
+        }
+        
+    }
+}
+
+
+
+}
