@@ -1,0 +1,29 @@
+@import '../utilities/variables';
+
+footer{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.01);
+
+    .footerContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button{
+            background-color: rgba(255, 255, 255, 0.04);
+            width: 45px;
+            height: 45px;
+            border: none;
+            border-radius: 100%;
+            position: fixed;
+            bottom: 5px;
+            right: 10px;
+
+            svg{
+                width: 27px;
+                height: 20px;
+                color: white;
+            }
+        }
+    }
+
+}

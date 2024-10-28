@@ -34,7 +34,7 @@
             color: white;
             font-size: 2rem;
             font-family: $fuenteOnest;
-            font-weight: bold;
+            font-weight: 700;
             text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
         }
         .lenguajesUsados{
@@ -50,20 +50,24 @@
                 align-items: center;
                 text-align: center;
                 padding: 20px;
-                width: 100px;
+                width: 110px;
                 height: 35px;
-                background-color: rgba(255, 255, 255, 0.1);
-                border: 1px solid white;
+                background-color: rgba(255, 255, 255, 0.01);
+                // border: 1px solid white;
                 border-radius: 15px;
 
                 .imgHtmlContainer,.imgCssContainer,.imgScssContainer{
                     margin: 0 5px 0 0;
                     img{
                         width: 25px;
-                        height:25px;                
+                        height:20px;                
                     }
                 }
                     .imgJsContainer{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 0 5px;
                         img{    
                             width: 20px;
                             height:20px;      
@@ -81,7 +85,7 @@
                         color: white;
                         font-size: 12px;
                         font-family: $fuenteOnest;
-                        font-weight: 100;
+                        font-weight: 500;
                     }
                 }
             }
