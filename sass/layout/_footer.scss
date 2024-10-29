@@ -17,11 +17,14 @@ footer{
             position: fixed;
             bottom: 5px;
             right: 10px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
 
             svg{
                 width: 27px;
                 height: 20px;
-                color: white;
+                color: #FDEF89;
             }
         }
     }
