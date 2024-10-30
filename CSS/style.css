@@ -51,7 +51,7 @@ header nav .nav-link:hover {
 
 .seccionInfo {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -135,37 +135,43 @@ header nav .nav-link:hover {
 
 .seccionSobreMiContainer {
   width: 100%;
-  height: 400px;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 10px 0;
 }
 .seccionSobreMiContainer .titleSobreMi {
-  margin: 25px;
+  margin: 50px 0;
   color: white;
   font-size: 2.3rem;
   font-family: "Onest", sans-serif;
   font-weight: 700;
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
-  margin: 25px;
 }
 .seccionSobreMiContainer .infoAboutMe {
-  width: 75%;
+  width: 100%;
+  margin: 30px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  gap: 180px;
 }
 .seccionSobreMiContainer .infoAboutMe .infoContainer {
+  width: 50%;
+  max-width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 55%;
+  text-align: left;
+  overflow: hidden;
 }
 .seccionSobreMiContainer .infoAboutMe .infoContainer .infoPresentacion {
   font-size: 1.3rem;
-  font-family: "Onest", sans-serif;
-  font-weight: 300;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
   color: #9098A3;
 }
 .seccionSobreMiContainer .infoAboutMe .infoContainer .infoPresentacion .color {
@@ -173,12 +179,14 @@ header nav .nav-link:hover {
   font-weight: 500;
 }
 .seccionSobreMiContainer .infoAboutMe .imgSobreMiContainer {
-  width: 45%;
+  width: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.01);
+  border: 1px solid white;
   border-radius: 10px;
+  rotate: 10deg;
 }
 .seccionSobreMiContainer .infoAboutMe .imgSobreMiContainer img {
   width: 300px;
@@ -295,7 +303,7 @@ header nav .nav-link:hover {
 
 .containerCardsLenguajes {
   width: 100%;
-  height: 450px;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -318,14 +326,38 @@ header nav .nav-link:hover {
 
 footer {
   width: 100%;
+  height: 70px;
   background-color: rgba(255, 255, 255, 0.01);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 footer .footerContainer {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 150px;
 }
-footer .footerContainer button {
+footer .footerContainer .nombreFooter {
+  color: #A2A3A7;
+  font-family: "Onest", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+footer .footerContainer .iconsFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+footer .footerContainer .iconsFooter .githubLogo {
+  color: #A2A3A7;
+}
+footer .footerContainer .iconsFooter .linkedinLogo {
+  color: #A2A3A7;
+}
+footer button {
   background-color: rgba(255, 255, 255, 0.04);
   width: 45px;
   height: 45px;
@@ -335,7 +367,7 @@ footer .footerContainer button {
   bottom: 5px;
   right: 10px;
 }
-footer .footerContainer button svg {
+footer button svg {
   width: 27px;
   height: 20px;
   color: #FDEF89;
@@ -395,16 +427,6 @@ footer .footerContainer button svg {
     text-align: center;
     gap: 5px;
   }
-  .containerCardsLenguajes {
-    height: auto;
-  }
-  .containerCardsLenguajes .tecnologiasContainer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
-  }
   .seccionSobreMiContainer {
     width: 100%;
     height: auto;
@@ -425,14 +447,74 @@ footer .footerContainer button svg {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 95%;
+    width: 75%;
+    max-width: 75%;
   }
   .seccionSobreMiContainer .infoAboutMe .infoContainer .infoPresentacion {
     font-size: 1.1rem;
     font-weight: 500;
   }
+  .seccionSobreMiContainer .infoAboutMe .imgSobreMiContainer {
+    display: none;
+  }
   .seccionSobreMiContainer .infoAboutMe .imgSobreMiContainer img {
     display: none;
+  }
+  .containerCardsLenguajes {
+    height: auto;
+    margin: 50px 0;
+  }
+  .containerCardsLenguajes .cardTeconologias {
+    width: 75px;
+    height: 75px;
+  }
+  .containerCardsLenguajes .tecnologiasContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+  footer {
+    width: 100%;
+    height: 70px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  footer .footerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  footer .footerContainer .nombreFooter {
+    color: #A2A3A7;
+    font-family: "Onest", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  footer .footerContainer .iconsFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  footer .footerContainer .iconsFooter .githubLogo {
+    color: #A2A3A7;
+  }
+  footer .footerContainer .iconsFooter .linkedinLogo {
+    color: #A2A3A7;
+  }
+  footer button {
+    display: none;
+  }
+  footer button svg {
+    width: 20px;
+    height: 20px;
+    color: #FDEF89;
   }
 }
 .cardTeconologias {

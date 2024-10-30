@@ -83,22 +83,6 @@
 }
 
 
-
-//Tecnologias
-.containerCardsLenguajes{
-    height: auto;
-
-    .tecnologiasContainer{
-       display: grid;
-       grid-template-columns: repeat(2,1fr);
-       grid-template-rows: repeat(2,1fr);
-       justify-content: center;
-       align-items: center;
-    
-    }
-}
-
-
 //Sobre mi 
 
 .seccionSobreMiContainer{
@@ -110,16 +94,6 @@
     flex-direction: column;
     margin: 50px 0 0 0 ;
     
-    // .titleSobreMi{
-    //     margin: 25px;
-    //     color: white;
-    //     font-size: 2.3rem;
-    //     font-family: $fuenteOnest;
-    //     font-weight: 700;
-    //     // letter-spacing: 10px;
-    //     text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
-    //     margin: 25px;
-    // }
 
     .infoAboutMe{
         width: 100%;
@@ -132,7 +106,8 @@
             display:flex;
             justify-content: center;
             align-items:center;
-            width: 95%;
+            width: 75%;
+            max-width: 75%;
 
             .infoPresentacion{
                 font-size: 1.1rem;
@@ -141,12 +116,91 @@
         }
 
         .imgSobreMiContainer{
+            display: none;
            img{
             display: none;
            }
         }
         
     }
+}
+
+
+
+
+//Tecnologias
+.containerCardsLenguajes{
+    height: auto;
+    margin: 50px 0 ;
+
+    .cardTeconologias {
+        width: 75px;
+        height: 75px;
+    }
+
+    .tecnologiasContainer{
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+       grid-template-rows: repeat(2,1fr);
+       justify-content: center;
+       align-items: center;
+    
+    }
+}
+
+
+
+//Footer
+
+
+footer{
+    width: 100%;
+    height: 70px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .footerContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        
+        .nombreFooter{
+            color: #A2A3A7;
+            font-family: $fuenteOnest;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .iconsFooter{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            .githubLogo{
+                color: #A2A3A7;
+                
+            }
+            .linkedinLogo{
+                // color: #0A66C2;
+                color: #A2A3A7;
+            }
+        }
+    }
+    button{
+     display: none;
+
+        svg{
+            width: 20px;
+            height: 20px;
+            color: #FDEF89;
+        }
+    }
+
 }
 
 
